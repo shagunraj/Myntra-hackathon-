@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Boards Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="screen active">
+        <img src="myntra-logo.png" alt="Myntra Logo" class="logo">
+        <h1>Welcome to Myntra Boards</h1>
+        <button onclick="navigateTo('home')">Get Started</button>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home-screen" class="screen hidden">
+        <nav>
+            <ul>
+                <li onclick="navigateTo('home')">Home</li>
+                <li onclick="navigateTo('explore')">Explore</li>
+                <li onclick="navigateTo('messages')">Messages</li>
+                <li onclick="navigateTo('profile')">Profile</li>
+            </ul>
+        </nav>
+        <h2>New Posts</h2>
+        <div class="post">
+            <img src="post1.jpg" alt="Post Image">
+            <div class="post-actions">
+                <button>Like</button>
+                <button>Comment</button>
+                <button>Share</button>
+                <button>Shop</button>
+            </div>
+        </div>
+        <!-- Add more posts as needed -->
+    </div>
+
+    <!-- Explore Page -->
+    <div id="explore-screen" class="screen hidden">
+        <h2>Explore</h2>
+        <input type="text" placeholder="Search...">
+        <div class="explore-section">
+            <h3>Shop the Celebrity Look</h3>
+            <!-- Add celebrity look posts here -->
+        </div>
+    </div>
+
+    <!-- Messages Page -->
+    <div id="messages-screen" class="screen hidden">
+        <h2>Messages</h2>
+        <div class="chat">
+            <!-- Add chat bubbles here -->
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile-screen" class="screen hidden">
+        <h2>Profile</h2>
+        <div class="profile-info">
+            <img src="user-avatar.jpg" alt="User Avatar">
+            <h3>User Name</h3>
+            <p>Bio goes here...</p>
+        </div>
+        <div class="boards">
+            <h3>My Boards</h3>
+            <!-- Add user boards here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
